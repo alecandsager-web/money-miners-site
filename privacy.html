@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MoneyMiners - Privacy Policy</title>
+<title>AI MealFinder - Privacy Policy</title>
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1e293b;background:#fff;line-height:1.7;padding:24px;max-width:720px;margin:0 auto}
 h1{font-size:28px;font-weight:800;color:#0f172a;margin-bottom:8px}
@@ -15,66 +15,70 @@ li{font-size:15px;color:#334155;margin-bottom:8px}
 </style>
 </head>
 <body>
-<h1>MoneyMiners Privacy Policy</h1>
-<p class="updated">Last updated: March 11, 2026</p>
-<p>MoneyMiners ("the app") is operated by Alec Andsager. This Privacy Policy explains how we collect, use, and protect your information when you use the app.</p>
+<h1>AI MealFinder Privacy Policy</h1>
+<p class="updated">Last updated: March 7, 2026</p>
+<p>AI MealFinder ("the app") is operated by Alec Andsager. This Privacy Policy explains how we collect, use, and protect your information when you use the app.</p>
 
 <h2>1. Information We Collect</h2>
-<p><strong>Account information:</strong> If you create an account or sign in with Google, we collect your name and email address. This information is stored securely using Google Firebase Authentication.</p>
-<p><strong>Game data:</strong> We store your game progress including gems earned, upgrades purchased, prestige level, town progress, streak data, and other gameplay statistics. This data is synced to Google Firebase Firestore so you can access your progress across devices.</p>
-<p><strong>Device information:</strong> We may collect basic device identifiers for analytics and ad serving purposes.</p>
-<p><strong>Ad interaction data:</strong> When you watch ads, basic interaction data (such as ad completion) is collected by our ad provider, Google AdMob.</p>
-<p><strong>Cashout information:</strong> If you request a PayPal cashout, we collect your PayPal email address to process the payment.</p>
+<p><strong>Photos you take:</strong> When you use the Scan feature, the app captures photos of your fridge, pantry, or other food items. These photos are sent to a third-party AI service (Anthropic's Claude API) for ingredient identification and recipe generation. Photos are processed in real-time and are not permanently stored on our servers or by the AI provider.</p>
+<p><strong>Account information:</strong> If you create an account, we collect your name and email address.</p>
+<p><strong>Preferences:</strong> We store your dietary preferences, allergies, meal schedule, and household size locally on your device using AsyncStorage. This data is not transmitted to external servers unless needed for recipe generation.</p>
+<p><strong>Usage data:</strong> We track basic usage metrics such as scan count (for free tier limits) stored locally on your device.</p>
+<p><strong>Subscription data:</strong> If you subscribe to AI MealFinder Pro, payment is processed through Apple's App Store. We use RevenueCat to manage subscription status. We do not have access to your payment details.</p>
 
 <h2>2. How We Use Your Information</h2>
 <p>We use your information to:</p>
 <ul>
-<li>Save and sync your game progress across devices via Firebase Firestore</li>
-<li>Authenticate your account via Firebase Authentication</li>
-<li>Track your in-game earnings and manage cashout requests</li>
-<li>Serve ads through Google AdMob, including rewarded and interstitial ads</li>
-<li>Maintain your login streak and apply streak bonuses</li>
+<li>Identify ingredients from photos of your fridge and pantry</li>
+<li>Generate personalized recipe suggestions based on your available ingredients</li>
+<li>Respect your dietary preferences and allergies when generating recipes</li>
+<li>Track your free scan usage and manage subscription access</li>
 <li>Improve the app experience</li>
 </ul>
 
-<h2>3. Third-Party Services</h2>
-<p>MoneyMiners uses the following third-party services:</p>
+<h2>3. Third-Party AI Service</h2>
+<p>AI MealFinder uses Anthropic's Claude API to analyze food photos and generate recipes. When you scan your kitchen:</p>
 <ul>
-<li><strong>Google Firebase:</strong> For user authentication (Firebase Auth) and cloud data storage (Firestore). See <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a>.</li>
-<li><strong>Google AdMob:</strong> For serving rewarded and interstitial advertisements. AdMob may use device identifiers and usage data to serve personalized ads. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
-<li><strong>PayPal:</strong> For processing cashout payments. When you request a cashout, your PayPal email is used to send payment. See <a href="https://www.paypal.com/us/legalhub/privacy-full">PayPal's Privacy Policy</a>.</li>
+<li>Your photo is sent to Anthropic's API for processing</li>
+<li>Your dietary preferences and allergies are included in the request to ensure safe recipe recommendations</li>
+<li>Photos are processed in real-time and are not permanently stored by Anthropic</li>
+<li>No other personal data (name, email, location) is sent to the AI provider</li>
 </ul>
+<p>For more information about Anthropic's data practices, visit <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a>.</p>
 
 <h2>4. Data Storage</h2>
-<p>Your game data is stored in Google Firebase Firestore, a cloud database service. This includes:</p>
+<p>Most of your data is stored locally on your device, including:</p>
 <ul>
-<li>Game progress (gems, upgrades, depth, prestige level)</li>
-<li>Town and upgrade ownership data</li>
-<li>Earnings balance and cashout history</li>
-<li>Streak and login history</li>
-<li>Profile preferences</li>
+<li>Saved recipes and recipe history</li>
+<li>Shopping list items</li>
+<li>Dietary preferences, allergies, and meal schedule</li>
+<li>Ingredient scan history</li>
+<li>App settings and preferences</li>
 </ul>
-<p>Some data is also cached locally on your device for offline access and performance.</p>
+<p>This data is not uploaded to external servers. It remains on your device and can be deleted at any time by deleting your account or uninstalling the app.</p>
 
-<h2>5. Advertising</h2>
-<p>MoneyMiners displays ads through Google AdMob. You may watch rewarded ads to earn in-game cash rewards, or encounter interstitial ads during gameplay. AdMob may collect and use data as described in Google's Privacy Policy. You can opt out of personalized ads through your device settings.</p>
+<h2>5. Subscription Management</h2>
+<p>Subscriptions are managed through RevenueCat and Apple's App Store:</p>
+<ul>
+<li>AI MealFinder Pro costs $4.99 per month</li>
+<li>Payment is charged to your Apple ID account</li>
+<li>Subscriptions auto-renew unless canceled at least 24 hours before the end of the current period</li>
+<li>You can manage and cancel your subscription in your Apple ID account settings</li>
+</ul>
 
-<h2>6. Cashouts and Payments</h2>
-<p>MoneyMiners allows you to earn real money by watching ads. When you reach the minimum cashout threshold, you can request a PayPal payment. We collect your PayPal email address solely to process these payments. Payment processing is subject to PayPal's terms and privacy policy.</p>
+<h2>6. Account Deletion</h2>
+<p>You can delete your account and all associated data at any time from the Profile screen within the app. Deleting your account will permanently remove all locally stored data including saved recipes, preferences, and scan history. Active subscriptions should be canceled through your Apple ID settings before deleting your account.</p>
 
-<h2>7. Account Deletion</h2>
-<p>You can delete your account and all associated data at any time from the Profile screen within the app. Deleting your account will permanently remove all game data from Firebase, including gems, upgrades, prestige progress, earnings history, and profile information. Any pending cashout requests should be resolved before deleting your account.</p>
+<h2>7. Children's Privacy</h2>
+<p>AI MealFinder is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
 
-<h2>8. Children's Privacy</h2>
-<p>MoneyMiners is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+<h2>8. Data Security</h2>
+<p>We take reasonable measures to protect your information. Photos sent to the AI service are transmitted securely via HTTPS. Local data is stored using the device's built-in storage mechanisms.</p>
 
-<h2>9. Data Security</h2>
-<p>We take reasonable measures to protect your information. All data transmitted between the app and Firebase is encrypted via HTTPS. Firebase provides enterprise-grade security for stored data. However, no method of electronic transmission or storage is 100% secure.</p>
-
-<h2>10. Changes to This Policy</h2>
+<h2>9. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy in the app and updating the "Last updated" date.</p>
 
-<h2>11. Contact Us</h2>
+<h2>10. Contact Us</h2>
 <p>If you have questions about this Privacy Policy, contact us at: alecandsager@gmail.com</p>
 </body>
 </html>
